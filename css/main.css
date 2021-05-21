@@ -3,8 +3,16 @@
     --font-title: 'Lexend Deca', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --font-size-15: 1.5rem;
-    --font-size-18: 1.875rem;
+    /* --- Colors --- */
+    /* Primary */
+    --very-dark-blue: hsl(233, 47%, 7%); /* main background */
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /* card background */
+    --soft-violet: hsl(277, 64%, 61%); /* accent */
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%); /* main heading, stats */
+    --slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6); /* stat headings */
+    --slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75); /* main paragraph */
 }
 
 /* Global */
@@ -23,9 +31,10 @@ body {
     padding: 0;
     line-height: 1.5;
     font-family: var(--font-body);
+    background-color: var(--very-dark-blue);
 }
 
-h1 {
+h1, h2 {
     font-family: var(--font-title);
     font-size: clamp(1.25rem, -1rem + 8.333vw, 1.875rem);
 }
