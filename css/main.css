@@ -37,10 +37,31 @@ body {
 h1, h2 {
     font-family: var(--font-title);
     font-size: clamp(1.25rem, -1rem + 8.333vw, 1.875rem);
+    color: var(--white);
 }
 
-p {
-    font-family: var(--font-body);
+p, .attribution, a {
     font-size: clamp(0.75rem, -0.75rem + 5.333vw, 0.875rem);
+    color: var(--slightly-transparent-white-p);
 }
 
+span {
+    color: var(--soft-violet);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li > * {
+    margin: 0;
+}
+
+li > *:not(.lowercase) {
+    text-transform: uppercase;
+}
+
+li > p {
+    letter-spacing: 0.1rem;
+}
