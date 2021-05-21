@@ -32,6 +32,11 @@ body {
     line-height: 1.5;
     font-family: var(--font-body);
     background-color: var(--very-dark-blue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -54,7 +59,7 @@ ul {
     padding: 0;
 }
 
-li > * {
+li > *, figure {
     margin: 0;
 }
 
@@ -64,4 +69,21 @@ li > *:not(.lowercase) {
 
 li > p {
     letter-spacing: 0.1rem;
+}
+
+/* Layout */
+.card {
+    background-color: var(--dark-desaturated-blue);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: clamp(280px, 85%, 1110px);
+    border-radius: 3vw;
+}
+
+figure {
+    height: 200px;
+    background-image: url('/images/image-header-mobile.jpg');
+    background-size: cover;
+    border-top-right-radius: 3vw;
+    border-top-left-radius: 3vw;
 }
