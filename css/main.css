@@ -2,6 +2,9 @@
 :root {
     --font-title: 'Lexend Deca', sans-serif;
     --font-body: 'Inter', sans-serif;
+
+    --font-size-15: 1.5rem;
+    --font-size-18: 1.875rem;
 }
 
 /* Global */
@@ -24,4 +27,11 @@ body {
 
 h1 {
     font-family: var(--font-title);
+    font-size: clamp(1.25rem, -1rem + 8.333vw, 1.875rem);
 }
+
+p {
+    font-family: var(--font-body);
+    font-size: clamp(0.75rem, -0.75rem + 5.333vw, 0.875rem);
+}
+
