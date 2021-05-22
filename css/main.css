@@ -93,17 +93,17 @@ p {
     letter-spacing: .0625rem;
 }
 
-.text-small {
-    font-size: 12px;
-    margin-top: 0;
-}
-
 .stat__title {
     margin-bottom: 0;
 }
 
 .upper {
     text-transform: uppercase;
+}
+
+.text-small {
+    font-size: 12px;
+    margin-top: 0;
 }
 
 /* Footer */
@@ -117,6 +117,7 @@ p {
     text-decoration: none;
 }
 
+/* Media queries */
 @media (min-width: 40em) {
     .card__text {
         width: 65%;
@@ -132,6 +133,7 @@ p {
     body {
         height: 100vh;
     }
+    
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
