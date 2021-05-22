@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --font-title: 'Lexend Deca', sans-serif;
+    --font-title: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     /* --- Colors --- */
@@ -28,32 +28,113 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-body);
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--white);
     background-color: var(--very-dark-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-size: 0.9375rem;
+    height: 100vh;
+}
+
+p {
+    margin-bottom: 0;
 }
 
 .upper {text-transform: uppercase;}
 
-.heading {font-family: var(--font-title);}
+.heading {
+    font-family: var(--font-title);
+    line-height: 1.2;
+    font-size: clamp(1.375rem, -0.875rem + 8.333vw, 1.75rem);
+}
 
 .highlight {color: var(--soft-violet);}
 
-.copy__body--light-text {color: var(--slightly-transparent-white-p);}
+.copy__body--light-text {
+    color: var(--slightly-transparent-white-p);
+    padding-bottom: 2.25rem;
+}
 
 .stats__list {
     list-style: none;
     letter-spacing: .0625rem;
+    padding: 0;
+    margin: 0;
 }
 
+.list__heading {
+    font-family: var(--font-title);
+    font-weight: 700;
+    margin-bottom: .1rem;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+/* Footer */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+ }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;}
 
+/* Layout */
+.card {
+    background-color: var(--dark-desaturated-blue);
+    width: 87vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5vh;
+    margin: 8vh 0;
+    overflow: hidden;
+}
 
+.card__image {
+    margin: 0;
+    height: 250px;
+    background-image: 
+        linear-gradient(hsla(277, 100%, 50%, 0.5), rgba(157, 0, 255, 0.5)),
+        url("/images/image-header-mobile.jpg");
+    background-size: cover;
+}
+
+.card__copy {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.copy__title {
+    margin-top: 40px;
+}
+
+@media (min-width: 54em) {
+    .card {
+        flex-flow: row wrap;
+    }
+
+    .card__image {
+        background-image: 
+        linear-gradient(hsla(277, 100%, 50%, 0.5), rgba(157, 0, 255, 0.5)),
+        url("/images/image-header-desktop.jpg");
+        width: 47%;
+        height: 100%;
+        order: 1;
+    }
+
+    .card__copy {
+        flex: 0 0 500px;
+        text-align: left;
+        padding: 4rem;
+    }
+
+    .stats__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
