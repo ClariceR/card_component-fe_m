@@ -74,16 +74,25 @@ li > p {
 /* Layout */
 .card {
     background-color: var(--dark-desaturated-blue);
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     width: clamp(280px, 85%, 1110px);
-    border-radius: 3vw;
+    border-radius: 2vw;
+    overflow: hidden;
 }
 
-figure {
-    height: 200px;
+.card__image {
+    height: 300px;
     background-image: url('/images/image-header-mobile.jpg');
     background-size: cover;
-    border-top-right-radius: 3vw;
-    border-top-left-radius: 3vw;
 }
+
+.card__copy {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
