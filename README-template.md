@@ -14,9 +14,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/mobile-first-vanilla-css-using-flexbox-and-grid-2sjkKbgeq)
+- Live Site URL: [Live site URL](https://claricer.github.io/card_component-fe_m/)
 
 ## My process
 
@@ -44,59 +42,34 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This challenge was great to practice making a responsive card layout. I tried to solve it without giving fixed sizes as much as I could. 
 
-To see how you can add code snippets, see below:
+I learned that we can use more than one background "image" in the same property, separating them with commas. However, we can't add a solid color, so the way I achieved the overlay effect was using a linear gradient, repeating the same colour with transparency. I thought that was pretty cool.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I also enjoyed choosing the way the image would resize, because in this case, it was more interesting kepping the face of the lady who is smilling always visible. 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Another aspect that I really enjoyed was using the BEM approach to my classes. I will be focused on learning and improving with this method from now on.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+When adding border radius to the card, the image covers the corners. One way to fix that is applying overflow hidden to the card.
+
+I could see really quickily that althoug using inherit for box-sizing is good, using inherit for margin is a terrible idea 😆
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'm interested in getting more practice with BEM and also looking into concepts like OOCSS.
+Also, I want to make the final product accessible and respecting users preferences.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Tinted image](https://css-tricks.com/tinted-images-multiple-backgrounds/) - I learned how to do the tinted image with this article.
+- [Fluid font size](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/) - I've ended up not using this, but it seems an interesting thing to try out.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Clarice](https://github.com/ClariceR)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Twitter - [@clari_ce_r](https://twitter.com/clari_ce_r)
