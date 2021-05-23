@@ -64,12 +64,10 @@ body {
 
 .card__text {
     text-align: center;
-    /* border: 1px solid orange; */
     width: 85%;
 }
 
 .text__title {
-    /* border: 1px solid pink; */
     line-height: 1.2;
     font-size: 1.625rem;
     letter-spacing: .0625rem;
