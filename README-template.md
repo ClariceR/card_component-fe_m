@@ -71,5 +71,5 @@ Also, I want to make the final product accessible and respecting users preferenc
 ## Author
 
 - Website - [Clarice](https://github.com/ClariceR)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ClariceR](https://www.frontendmentor.io/profile/ClariceR)
 - Twitter - [@clari_ce_r](https://twitter.com/clari_ce_r)
