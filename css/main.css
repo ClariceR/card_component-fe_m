@@ -133,7 +133,7 @@ p {
     body {
         height: 100vh;
     }
-    
+
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -142,9 +142,7 @@ p {
 
     .card__image {
         grid-area: image;
-        background-image: 
-        linear-gradient(hsla(277, 100%, 50%, 0.5), hsla(277, 100%, 50%, 0.5)),
-        url('/images/image-header-desktop.jpg');
+        background-image: url('/images/image-header-desktop.jpg');
         background-position: top right;
         height: 100%;
     }
