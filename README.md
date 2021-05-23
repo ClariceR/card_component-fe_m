@@ -73,3 +73,5 @@ Also, I want to make the final product accessible and respecting users preferenc
 - Website - [Clarice](https://github.com/ClariceR)
 - Frontend Mentor - [@ClariceR](https://www.frontendmentor.io/profile/ClariceR)
 - Twitter - [@clari_ce_r](https://twitter.com/clari_ce_r)
+
+![Card Component Mobile](images/fmentor-prev-card-component-mobile.png)
